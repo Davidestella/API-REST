@@ -1,0 +1,11 @@
+<p>pagina3 works!</p>
+<h2>Gestione Lista</h2>
+<input [(ngModel)]="elemento" placeholder="Aggiungi elemento">
+<button (click)="aggiungi()">Aggiungi</button>
+
+<ul>
+  <li *ngFor="let item of lista">
+    {{ item.nome }}
+    <button (click)="elimina(item.id)">❌ Elimina</button>
+  </li>
+</ul>
